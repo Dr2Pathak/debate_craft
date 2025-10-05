@@ -26,7 +26,6 @@
 - **Embedding:** Gemini — `gemini-embedding-001` (embedding 2,000+ sources)  
 - **LangChain:** Orchestration for embedding user arguments + difficulty + subject → build retriever & prompt, manage session memory, and run RAG chains.  
 - **Speech:** ElevenLabs STT + ElevenLabs streaming TTS (stream audio while text is generated)  
-- **Deployment:** GitHub (CI/CD) → Vercel / AWS (planned)
 
 ---
 
