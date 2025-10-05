@@ -20,7 +20,7 @@
 ## Tech Stack
 
 - **Frontend & Cloud:** Lovable (React-based)  
-- **Backend:** Python (FastAPI) / Supabase (TBD)  
+- **Backend:** Python (FastAPI) / Supabase
 - **Vector Database:** Pinecone (semantic search & retrieval)  
 - **Summarization / Generation:** Gemini — `gemini-2.5-flash` (rebuttal generation & summarization of large corpora)  
 - **Embedding:** Gemini — `gemini-embedding-001` (embedding 2,000+ sources)  
