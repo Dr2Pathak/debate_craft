@@ -32,7 +32,7 @@
 ## How It Works (end-to-end)
 
 1. **Start debate** — User selects category, debate experience, and AI level; types or speaks an opening argument (STT used if audio).  
-2. **Embed & retrieve** — Server-side embedding of the opening argument (Gemini), then query Pinecone `debatecraft` index for top_k=10 matches. Retrieve each match’s `metadata.summary`.  
+2. **Embed & retrieve** — Server-side embedding of the opening argument (Gemini), then query Pinecone index for top_k=10 matches. Retrieve each match’s `metadata.summary`.  
 3. **Build RAG prompt** — LangChain composes a prompt containing user metadata (category, experience, AI level), conversation history, and the top-10 summaries labeled by SourceID. System instruction enforces grounding in provided context.  
 4. **Generate & stream** — Gemini (gemini-2.5-flash) generates a counterargument (~80–100 words) while ElevenLabs streaming TTS begins playing audio in parallel so the user hears speech as the text appears.  
 5. **Store turn & repeat** — Embed the new user/AI turn and upsert into Pinecone with the pattern `{session_id}::turn::{turn_index}` to support later re-ranking.  
