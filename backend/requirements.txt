@@ -1,0 +1,83 @@
+# --------------------
+# ⚙️ Core Framework
+# --------------------
+fastapi==0.115.13
+uvicorn==0.34.3
+
+# ------------------------
+# 🌐 HTTP & Networking
+# ------------------------
+requests==2.32.4
+httpx==0.28.1
+
+# ------------------------
+# 📊 Data Processing & ML
+# ------------------------
+numpy==2.2.6
+scikit-learn==1.7.0
+
+# ------------------------
+# 🧠 AI / LLM / Embeddings
+# ------------------------
+openai==1.90.0
+langchain==0.3.26
+langchain-core==0.3.66
+langchain-text-splitters==0.3.8
+langchain-pinecone==0.2.9
+langchain-google-genai==2.0.4
+huggingface-hub==0.33.0
+tokenizers==0.20.3
+transformers>=4.30.0
+torch>=2.0.0
+
+# Google Gemini API (new SDK)
+google-genai>=1.0.0
+protobuf>=6.30.0,<7.0.0
+
+# ------------------------
+# 🔍 Vector Databases
+# ------------------------
+pinecone    # Pinecone SDK
+
+# ------------------------
+# 🌐 Web Scraping
+# ------------------------
+beautifulsoup4==4.13.4
+lxml==6.0.0
+
+# ------------------------
+# 🔐 Auth / Security
+# ------------------------
+bcrypt==4.3.0
+passlib==1.7.4
+cryptography==45.0.4
+
+# ------------------------
+# 🛠️ Utility Libraries
+# ------------------------
+python-dotenv==1.1.1
+pydantic==2.11.7
+pydantic_core==2.33.2
+tqdm==4.67.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.2
+validators==0.34.0
+jsonschema==4.19.0
+
+# ------------------------
+# 🔄 Async & Concurrency
+# ------------------------
+anyio==4.9.0
+h11==0.16.0
+
+# ------------------------
+# 🔧 gRPC (compatible versions)
+# ------------------------
+grpcio==1.73.0
+grpcio-health-checking==1.73.0
+grpcio-tools==1.73.0
+
+# ------------------------
+# 🧪 Annotated Types
+# ------------------------
+annotated-types==0.7.0
