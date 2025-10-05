@@ -1,0 +1,16 @@
+project_id = "wuwmwgsznpweixbejjtc"
+
+[functions.debate-start]
+verify_jwt = false
+
+[functions.debate-continue]
+verify_jwt = false
+
+[functions.debate-analyze]
+verify_jwt = false
+
+[functions.elevenlabs-stt]
+verify_jwt = false
+
+[functions.elevenlabs-tts]
+verify_jwt = false
