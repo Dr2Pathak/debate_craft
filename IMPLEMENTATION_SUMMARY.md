@@ -1,6 +1,6 @@
-# 🎯 RAG-Powered Debate System - Implementation Complete
+#  RAG-Powered Debate System - Implementation Complete
 
-## ✅ What's Been Built
+##  What's Been Built
 
 A complete end-to-end RAG (Retrieval-Augmented Generation) debate platform where users can:
 1. **Start debates** with AI across multiple topics (Education, History, Science, Biology, Technology, Politics)
@@ -8,7 +8,7 @@ A complete end-to-end RAG (Retrieval-Augmented Generation) debate platform where
 3. **View live source citations** in a beautiful, expandable sources panel
 4. **Receive comprehensive performance analysis** with scores, strengths, critical issues, and actionable feedback
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Backend (Supabase Edge Functions)
 Three serverless functions deployed automatically:
@@ -83,7 +83,7 @@ Four main pages with beautiful gradient UI:
 - Session-based user email display
 - Responsive navigation
 
-## 🔐 Secrets & Configuration
+##  Secrets & Configuration
 
 ### Required Secrets (Already Configured)
 - ✅ `LOVABLE_API_KEY` - Auto-provisioned by Lovable
@@ -187,17 +187,6 @@ curl -X POST "${SUPABASE_URL}/functions/v1/debate-start" \
 }
 ```
 
-## 🚀 Next Steps for Production
-
-### 1. Populate Pinecone Index
-Your Pinecone index needs corpus data. Use the demo script in `README_DEV.md`:
-
-```python
-# scripts/demo_upsert.py
-# - Embed corpus documents with Lovable AI
-# - Upsert to Pinecone global namespace
-# - Include metadata: title, summary, category, date, page
-```
 
 **Minimum viable corpus**: 50-100 documents per category (Education, History, Science, Biology, Technology, Politics)
 
@@ -215,7 +204,7 @@ Your Pinecone index needs corpus data. Use the demo script in `README_DEV.md`:
 - **Share debates**: Export transcripts to PDF
 - **Advanced analytics**: Track improvement over time
 
-## 🎨 UI/UX Highlights
+## UI/UX Highlights
 
 ### Design System
 - **Gradient backgrounds**: Crimson-to-amber (passion + intellect)
@@ -232,27 +221,25 @@ Your Pinecone index needs corpus data. Use the demo script in `README_DEV.md`:
 - Screen reader friendly labels
 - Focus states on interactive elements
 
-## 📚 Documentation
+## Documentation
 
 Comprehensive developer guide available in:
 - **`README_DEV.md`**: API specs, testing guide, debugging, deployment
 
-## 🎉 Key Features Delivered
+## Key Features Delivered
 
-✅ **RAG Implementation**: Pinecone + Gemini embeddings + generation  
-✅ **Session Management**: Per-debate namespacing in Pinecone  
-✅ **Source Citations**: Inline [Source N] with expandable panel  
-✅ **Performance Analysis**: Structured JSON with 6 dimensions  
-✅ **Beautiful UI**: Modern gradient design with smooth animations  
-✅ **E2E Flow**: Home → Setup → Debate → Results  
-✅ **Edge Functions**: 3 serverless functions auto-deployed  
-✅ **Security**: Server-side secrets, no API keys exposed  
-
-## 🔥 Free Gemini Models
-**Note**: All Gemini models are FREE until Oct 6, 2025! Perfect for testing and initial deployment.
+ **RAG Implementation**: Pinecone + Gemini embeddings + generation  
+ **Session Management**: Per-debate namespacing in Pinecone  
+ **Source Citations**: Inline [Source N] with expandable panel  
+ **Performance Analysis**: Structured JSON with 6 dimensions  
+ **Beautiful UI**: Modern gradient design with smooth animations  
+ **E2E Flow**: Home → Setup → Debate → Results  
+ **Edge Functions**: 3 serverless functions auto-deployed  
+ **Security**: Server-side secrets, no API keys exposed  
 
 ---
 
 **Status**: ✅ **Production Ready** (pending Pinecone corpus population)
 
 The system is fully functional and ready for testing. The only remaining task is populating your Pinecone index with domain-specific corpus documents for each debate category.
+
